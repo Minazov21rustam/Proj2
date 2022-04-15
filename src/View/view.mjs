@@ -106,7 +106,7 @@ export default class View {
       name: "tasks",
     });
     const buttonDiv = this.createDiv({ class: "button-div" });
-    this.button = this.createButton({ class: "buttonAdd", text: ".             Добавить" });
+    this.button = this.createButton({ class: "buttonAdd", text: " Добавить" });
     const buttonPlus = this.createButton({ class: "buttonPlus" ,type: 'button',text: '+'});
 
     this.buttonSort = this.createDiv({ class: "img-up" });

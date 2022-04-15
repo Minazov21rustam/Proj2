@@ -157,15 +157,16 @@ p {
 }
 .buttonAdd {
   display: flex;
-  justify-content: space-around;
+  justify-content: end;
   align-items: center;
   background-color: #833ae0;
   border: 0px;
   border-radius: 20px;
   margin: 10px;
-  width: 129px;
+  width: 113px;
   height: 32px;
   cursor: pointer;
+  color: white;
   
 }
 .buttonAdd:hover{
@@ -242,6 +243,7 @@ p {
   height: 34px;
   background-color:#7750ac;
   border-radius: 20px;
-  margin-right: 95px;
+  margin-right: 75px;
   font-size: 20px;
+  color: white;
 }

@@ -61,6 +61,7 @@ export default class Controller {
       name: "input-name",
       value: task,
     });
+
     li.appendChild(this.newInput);
     this.view.ul.appendChild(li);
     const deleteButton = this.view.createImage({

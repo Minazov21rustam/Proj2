@@ -157,7 +157,7 @@ p {
 }
 .buttonAdd {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #833ae0;
   border: 0px;
@@ -166,6 +166,7 @@ p {
   width: 129px;
   height: 32px;
   cursor: pointer;
+  
 }
 .buttonAdd:hover{
   opacity: 0.7;
@@ -234,4 +235,13 @@ p {
   margin-top: 3px;
   border-radius: 10px;
   cursor: pointer;
+}
+.buttonPlus{
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  background-color:#7750ac;
+  border-radius: 20px;
+  margin-right: 95px;
+  font-size: 20px;
 }

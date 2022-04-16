@@ -6,6 +6,7 @@ export default class Controller {
 
   init() {
     this.view.init();
+
     this.view.form.addEventListener("submit", (e) => {
       e.preventDefault();
       const data = new FormData(e.target);
@@ -55,7 +56,7 @@ export default class Controller {
   }
 
   addElement(task, currentIndex) {
-    const li = this.view.createLi({ class: "li" });
+    const li = this.view.createLi({ class: "li draggable", draggable: "true" });
     this.newInput = this.view.createInput({
       class: "input-li",
       name: "input-name",

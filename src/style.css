@@ -36,6 +36,11 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
@@ -66,18 +71,22 @@ textarea,
 select {
   font: inherit;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@200;400;600&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body {
   font-family: "Roboto", sans-serif;
 }
+
 .yellow-div {
   width: 100%;
   height: 28px;
   background-color: #ffdc40;
 }
+
 body {
   margin: 0 auto;
 }
+
 .li {
   list-style: none;
   display: flex;
@@ -92,18 +101,18 @@ body {
 
 .mainList {
   border: solid 1px gray;
-  /* width: 256px; */
   border-radius: 10px;
   border: 1px solid #c4c4c4;
-  /* padding: 5px; */
   margin-bottom: 25px;
 
   max-height: 105px;
   overflow-y: scroll;
 }
+
 .mainList::-webkit-scrollbar {
   width: 0;
 }
+
 .input-li {
   outline: none;
   border: none;
@@ -115,10 +124,12 @@ p {
   font-size: 26px;
   margin-top: 17px;
 }
+
 #root {
   margin: 50px auto;
   max-width: 336px;
 }
+
 .form {
   border: 1px solid #c4c4c4;
   display: flex;
@@ -126,8 +137,8 @@ p {
   border-radius: 10px;
   overflow: hidden;
   align-items: center;
-  height: 350px;
 }
+
 .toDoP {
   display: flex;
   flex-direction: column;
@@ -137,41 +148,26 @@ p {
   font-weight: 900;
   font-style: normal;
 }
-.tasks {
-  width: 286px;
+
+.main-input {
   border-radius: 10px;
   border: 1px solid #c4c4c4;
   padding: 5px;
-  height: 40px;
+  height: 27px;
   padding: 0 27px;
   margin-bottom: 20px;
 }
+
 .mainList {
   border-radius: 10px;
-  width: 286px;
   border: 1px solid #c4c4c4;
   margin-bottom: 20px;
 }
+
 #mainList {
   margin: 0;
 }
-.buttonAdd {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  background-color: #833ae0;
-  border: 0px;
-  border-radius: 20px;
-  margin: 10px;
-  width: 113px;
-  height: 32px;
-  cursor: pointer;
-  color: white;
-  
-}
-.buttonAdd:hover{
-  opacity: 0.7;
-}
+
 .buttonSort {
   position: relative;
   left: 120px;
@@ -179,6 +175,7 @@ p {
   background-color: white;
   margin-bottom: 20px;
 }
+
 .image1:hover {
   opacity: 0.5;
 }
@@ -187,9 +184,11 @@ p {
   width: 100%;
   height: 100%;
 }
+
 .deleteButton:hover {
   background-color: #833ae0;
 }
+
 .img-up {
   background-image: url("assets/images/grayImage2.svg");
   position: relative;
@@ -200,8 +199,9 @@ p {
   height: 15px;
   width: 25px;
 }
+
 .img-down {
-  background-image: url("assets/images/sortImage1.svg");
+  background-image: url("assets/images/grayImage1.svg");
   position: relative;
   left: 120px;
   border: 0;
@@ -215,10 +215,12 @@ p {
   background-image: url("assets/images/sortImage2.svg");
   cursor: pointer;
 }
+
 .img-down:hover {
-  background-image: url("assets/images/grayImage1.svg");
+  background-image: url("assets/images/sortImage1.svg");
   cursor: pointer;
 }
+
 .deleteImage {
   background-image: url("assets/images/grayDeleteImage.svg");
   width: 20px;
@@ -228,6 +230,7 @@ p {
   cursor: pointer;
   border-radius: 10px;
 }
+
 .deleteImage:hover {
   background-image: url("assets/images/blueDeleteImage.svg");
   width: 20px;
@@ -237,13 +240,36 @@ p {
   border-radius: 10px;
   cursor: pointer;
 }
-.buttonPlus{
+
+.buttonPlus {
   position: absolute;
-  width: 34px;
-  height: 34px;
-  background-color:#7750ac;
+  width: 42px;
+  height: 42px;
+  background-color: #a77ee2;
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
-  margin-right: 75px;
+  margin-right: 135px;
   font-size: 20px;
   color: white;
+  border: none;
+}
+
+.buttonAdd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #833ae0;
+  border: 0px;
+  border-radius: 20px;
+  margin: 10px;
+  width: 150px;
+  height: 42px;
+  cursor: pointer;
+  color: white;
+  padding-left: 30px;
+}
+
+.buttonAdd:hover {
+  opacity: 0.7;
 }

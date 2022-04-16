@@ -34,6 +34,7 @@ export default class View {
 
     props.class && (ul.className = props.class);
     props.id && (ul.id = props.id);
+    
     return ul;
   }
 
@@ -43,6 +44,7 @@ export default class View {
     props.text && (li.innerText = props.text);
     props.class && (li.className = props.class);
     props.id && (li.id = props.id);
+    props.draggable && (li.draggable = props.draggable)
 
     return li;
   }
@@ -100,17 +102,16 @@ export default class View {
     const sortDiv = this.createDiv({ class: "sort-div" });
     const inputDiv = this.createDiv({ class: "input-div" });
     this.input = this.createInput({
-      class: "tasks",
+      class: "main-input",
       type: "text",
-      value: "Bla,bla ,bla",
       name: "tasks",
     });
     const buttonDiv = this.createDiv({ class: "button-div" });
-    this.button = this.createButton({ class: "buttonAdd", text: " Добавить" });
+    this.button = this.createButton({ class: "buttonAdd", text: "Добавить" });
     const buttonPlus = this.createButton({ class: "buttonPlus" ,type: 'button',text: '+'});
 
     this.buttonSort = this.createDiv({ class: "img-up" });
-    this.ul = this.createUl({ id: "mainList" });
+    this.ul = this.createUl({ id: "mainList" ,class: 'mainList' });
     this.form = this.createForm({ class: "form" });
 
     toDoDiv.appendChild(toDoP);

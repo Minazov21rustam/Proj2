@@ -111,7 +111,7 @@ export default class View {
     const buttonPlus = this.createButton({ class: "buttonPlus" ,type: 'button',text: '+'});
 
     this.buttonSort = this.createDiv({ class: "img-up" });
-    this.ul = this.createUl({ id: "mainList" ,class: 'mainList' });
+    this.ul = this.createUl({ id: "mainList" ,class: 'mainList ' });
     this.form = this.createForm({ class: "form" });
 
     toDoDiv.appendChild(toDoP);
